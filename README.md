@@ -10,6 +10,13 @@ conda create -n videou python=3.8
 ```
 pip install -r requirements.txt
 ```
+I recommend that users follow the best practices to install MMAction2:
+```
+pip install -U openmim
+mim install mmcv==2.0.0
+mim install mmdet==3.0.0
+mim install mmengine==0.7.2
+```
 
 Install all the python dependencies using pip:
 ```
