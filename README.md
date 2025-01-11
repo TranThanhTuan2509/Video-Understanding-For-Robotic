@@ -23,6 +23,32 @@ Install all the python dependencies using pip:
 pip install -r requirements.txt
 ```
 
+Download a pretrained-weight for detection model, save downloaded checkpoint inside `res101_handobj_100K/pascal_voc` folder:
+<table><tbody>
+<tr>
+<td align="center">Name</td>
+<td align="center">Hand</td>
+<td align="center">Obj</td>
+<td align="center">H+Side</td>
+<td align="center">H+State</td>
+<td align="center">H+O</td>
+<td align="center">All</td>
+<td align="center">Model Download Link</td>
+</tr>
+
+<tr>
+<td align='left'>handobj_100K+ego</td>
+<td align='center'>90.4</td>
+<td align='center'>66.3</td>
+<td align='center'>88.4</td>
+<td align='center'>73.2</td>
+<td align='center'>47.6</td>
+<td align='center'>39.8</td>
+<td align="center"><a href="https://drive.google.com/open?id=1H2tWsZkS7tDF8q1-jdjx6V9XrK25EDbE">faster_rcnn_1_8_132028.pth</a></td>
+</tr>
+
+</tbody></table>
+
 Compile the cuda dependencies using following simple commands:
 ```
 cd lib
