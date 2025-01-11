@@ -23,7 +23,7 @@ Install all the python dependencies using pip:
 pip install -r requirements.txt
 ```
 
-Download a pretrained-weight for detection model, save downloaded checkpoint inside `res101_handobj_100K/pascal_voc` folder:
+Download a pretrained-weight for detection model, save downloaded checkpoint inside `hand_object_detector/res101_handobj_100K/pascal_voc` folder:
 <table><tbody>
 <tr>
 <td align="center">Name</td>
@@ -48,6 +48,11 @@ Download a pretrained-weight for detection model, save downloaded checkpoint ins
 </tr>
 
 </tbody></table>
+
+Save the downloaded file to your own specified directory, you have to update the --dest `hand_object_detector/mmaction2/pretrained_file_and_checkpoint`:
+```
+mim download mmaction2 --config tsn_imagenet-pretrained-r50_8xb32-1x1x8-100e_kinetics400-rgb --dest /path
+```
 
 Compile the cuda dependencies using following simple commands:
 ```
