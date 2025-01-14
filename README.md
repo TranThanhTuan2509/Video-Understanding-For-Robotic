@@ -51,7 +51,7 @@ Download a pretrained-weight for detection model, save downloaded checkpoint ins
 
 Save the downloaded file to your own specified directory, you have to update the --dest `hand_object_detector/mmaction2/pretrained_file_and_checkpoint`:
 ```
-mim download mmaction2 --config tsn_imagenet-pretrained-r50_8xb32-1x1x8-100e_kinetics400-rgb --dest /path
+mim download mmaction2 --config tsm_imagenet-pretrained-r50_8xb16-1x1x16-50e_sthv2-rgb --dest /path
 ```
 
 Compile the cuda dependencies using following simple commands:
@@ -61,6 +61,6 @@ python setup.py build develop
 ```
 Run the main code:
 ```
-python3 demo.py --checkepoch=8 --checkpoint=132028 --video /home/tuan/Downloads/picking_cube.mp4
+python3 demo.py --checkepoch=8 --checkpoint=132028 --video /video_path
 ```
 Predicted command is saved in `motion_saver` folder
