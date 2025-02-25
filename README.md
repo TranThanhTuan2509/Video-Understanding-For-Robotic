@@ -63,4 +63,4 @@ Run the main code:
 ```
 python3 demo.py --checkepoch=8 --checkpoint=132028 --video /video_path
 ```
-Predicted command is saved in `motion_saver` folder
+Predicted command will be saved in `motion_saver` folder
